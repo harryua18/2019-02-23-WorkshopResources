@@ -1,0 +1,336 @@
+    1  nano test.txt
+    2  o
+    3  ython swc-installation-test-1.py
+    4  Python swc-installation-test-1.py
+    5  python swc-installation-test-1.py
+    6  exit
+    7  #!/usr/bin/env python
+    8  """Test script to check required Python version.
+    9  Execute this code at the command line by typing:
+   10    python swc-installation-test-1.py
+   11  How to get a command line:
+   12  - On OSX run this with the Terminal application.
+   13  - On Windows, go to the Start menu, select 'Run' and type 'cmd'
+   14  (without the quotes) to run the 'cmd.exe' Windows Command Prompt.
+   15  - On Linux, either use your login shell directly, or run one of a
+   16    number of graphical terminals (e.g. 'xterm', 'gnome-terminal', ...).
+   17  For some screen shots, see:
+   18    http://software-carpentry.org/setup/terminal.html
+   19  Run the script and follow the instructions it prints at the end.  If
+   20  you see an error saying that the 'python' command was not found, than
+   21  you may not have any version of Python installed.  See:
+   22    http://www.python.org/download/releases/2.7.3/#download
+   23  for installation instructions.
+   24  This test is separate to avoid Python syntax errors parsing the more
+   25  elaborate `swc-installation-test-2.py`.
+   26  """
+   27  import sys as _sys
+   28  __version__ = '0.2'
+   29  def check():
+   30  #!/usr/bin/env python
+   31  """Test script to check for required functionality.
+   32  Execute this code at the command line by typing:
+   33    python swc-installation-test-2.py
+   34  Run the script and follow the instructions it prints at the end.
+   35  This script requires at least Python 2.6.  You can check the version
+   36  of Python that you have installed with 'swc-installation-test-1.py'.
+   37  By default, this script will test for all the dependencies your
+   38  instructor thinks you need.  If you want to test for a different set
+   39  of packages, you can list them on the command line.  For example:
+   40    python swc-installation-test-2.py git virtual-editor
+   41  This is useful if the original test told you to install a more recent
+   42  version of a particular dependency, and you just want to re-test that
+   43  dependency.
+   44  """
+   45  # Some details about the implementation:
+   46  # The dependencies are divided into a hierarchy of classes rooted on
+   47  # Dependency class. You can refer to the code to see which package
+   48  # comes under which type of dependency.
+   49  # The CHECKER dictionary stores information about all the dependencies
+   50  # and CHECKS stores list of the dependencies which are to be checked in
+   51  # the current workshop.
+   52  # In the "__name__ == '__main__'" block, we launch all the checks with
+   53  # check() function, which prints information about the tests as they run
+   54  # and details about the failures after the tests complete. In case of
+   55  # failure, the functions print_system_info() and print_suggestions()
+   56  # are called after this, where the former prints information about the
+   57  # user's system for debugging purposes while the latter prints some
+   58  # suggestions to follow.
+   59  from __future__ import print_function  # for Python 2.6 compatibility
+   60  import distutils.ccompiler as _distutils_ccompiler
+   61  import fnmatch as _fnmatch
+   62  try:  # Python 2.7 and 3.x
+   63      import importlib as _importlib
+   64  except ImportError:  # Python 2.6 and earlier
+   65      class _Importlib (object):
+   66  nano
+   67  o
+   68  clear
+   69  ls
+   70  getdir
+   71  getdirectory
+   72  pwd
+   73  clear
+   74  ls.l
+   75  ls -l
+   76  clear
+   77  ls -a
+   78  ls -la
+   79  pwd
+   80  help
+   81  cd --help
+   82  q
+   83  cd
+   84  cd Documents/
+   85  ls -l
+   86  cd ..
+   87  cd
+   88  pwd
+   89  cd Documents/
+   90  pwd
+   91  cd ..
+   92  clear 
+   93  cd 
+   94  cd Document
+   95  cd Documents
+   96  ~
+   97  cd ~
+   98  pwd
+   99  clear
+  100  pwd
+  101  cd!
+  102  cd ~
+  103  pwd
+  104  mkdir SDC_02-23-2019
+  105  ls
+  106  ls -l
+  107  mkdir SDC_02-23-2019/repository
+  108  ls SDC_02-23-2019/
+  109  mkdir SDC_02-23-2019/repository/thesis
+  110  mkdir SDC_02-23-2019/repository/analysis
+  111  mkdir SDC_02-23-2019/repository/data
+  112  mkdir SDC_02-23-2019/repository/data/original_data
+  113  mkdir SDC_02-23-2019/repository/data/processed_data
+  114  ls SDC_02-23-2019/
+  115  ls SDC_02-23-2019/repository/
+  116  ls SDC_02-23-2019/repository/
+  117  pwd
+  118  cd repsoitory
+  119  cd repsoitory/
+  120  cd SDC_02-23-2019/
+  121  ls
+  122  cd SDC_02-23-2019/repository/
+  123  cd repository/
+  124  cd data/
+  125  ls
+  126  cd ~/SDC_02-23-2019/
+  127  pwd
+  128  clear
+  129  ls -la repository/data
+  130  pwd
+  131  cd ..
+  132  pwd
+  133  pwd
+  134  ls
+  135  ls -la
+  136  clear
+  137  cd Recent/
+  138  cd..
+  139  cd ..
+  140  pwd
+  141  cd SDC_02-23-2019/repository/
+  142  nnao
+  143  nano
+  144  ls
+  145  nano
+  146  nano thesis1 
+  147  nano thesis1
+  148  clear
+  149  pwd
+  150  touch draft.txt
+  151  ls -l
+  152  clear 
+  153  nano draft.txt
+  154  ls -l
+  155  mv draft.txt thesis/
+  156  ls thesis
+  157  pwd
+  158  pwd
+  159  clear
+  160  cp thesis.txt thesis/thesis_copy.txt 
+  161  cp thesis thesis/thesis_copy.txt 
+  162  cp thesis1.txt thesis/thesis_copy.txt 
+  163  cp thesis1 thesis/thesis_copy.txt 
+  164* clear.exe [A
+  165  cp thesis1.txt thesis/thesis_copy.txt clear
+  166  clear
+  167  pwd
+  168  cd .
+  169  cd ..
+  170  pwd
+  171  git close https://github.com/harryua18/2019-02-23-WorkshopResources.git
+  172  git clone https://github.com/harryua18/2019-02-23-WorkshopResources.git
+  173  ls -l
+  174  clear
+  175  sp -r 2019-02-23-WorkshopResources/shell-lessons/data/* repository/data/original_data/original_data/
+  176  cp -r 2019-02-23-WorkshopResources/shell-lessons/data/* repository/data/original_data/original_data/
+  177  cp -r 2019-02-23-WorkshopResources/shell-lessons/data/* repository/data/original_data/
+  178  clear
+  179  ls -la
+  180  ls -la repository/data/original_data/
+  181  ls
+  182  cd repository/
+  183  pwd
+  184  clear
+  185  cat
+  186  clear
+  187  cat data/original_data/gapminder_data/gapminder_by_country/gapminder_final.txt
+  188  cat data/original_data/gapminder_data/gapminder_by_country/Afghanistan.cc.txt 
+  189  tail data/original_data/gapminder_data/gapminder_by_country/Afghanistan.cc.txt 
+  190  clear
+  191  wc data/original_data/gapminder_data/gapminder_by_country/Afghanistan.cc.txt 
+  192  wc -c data/original_data/gapminder_data/gapminder_by_country/Afghanistan.cc.txt 
+  193  clear
+  194  cd data/original_data/gapminder_data/gapminder_by_country/
+  195  pwd
+  196  cat country.cc.txt
+  197  mv country.cc.txt header.txt
+  198  ls
+  199  cat header,txt
+  200  cat header.txt
+  201  cat country.cc.txt
+  202  clear
+  203  cat *.cc.txt
+  204  clear
+  205  cat header.txt *.cc.txt
+  206  clear all
+  207  clear 
+  208  cat header.txt *.cc.txt >> ../../../processed_data/all_countries.txt
+  209  cd ..
+  210  cd ~
+  211  cd SDC_02-23-2019/repository/data/processed_data/
+  212  wc -l all_countries.txt 
+  213  clear
+  214  pwd
+  215  cd ..
+  216  pwd
+  217  cd ~
+  218  pwd
+  219  cd SDC_02-23-2019/repository/data/original_data/gapminder_data/gapminder_by_country/
+  220  pwd
+  221  cd ~
+  222  pwd
+  223  cd SDC_02-23-2019/2019-02-23-WorkshopResources/shell-lessons/data/gapminder_data/gapminder_by_country/
+  224  nano
+  225  nano Argentina.cc.txt 
+  226  git status
+  227  git add Argentina.cc.txt 
+  228  git status 
+  229  git commit  -m
+  230  git commit  -m "changed the first line year from 1952 to 1954 in Argentina file"
+  231  git config --global user.name "harryua18"
+  232  git config --global user.email "harshadkalyankar@email.arizona.edu"
+  233  git commit  -m "changed the first line year from 1952 to 1954 in Argentina file"
+  234  git log
+  235  ls
+  236  cat Vietnam.cc.txt 
+  237  cp Vietnam.cc.txt Vietnam_copy.cc.txt 
+  238  ls
+  239  git status
+  240  git add Vietnam_copy.cc.txt 
+  241  git status 
+  242  git commit -m "Create copy of Vietnam file"
+  243  git sta
+  244* 
+  245  git log
+  246  git push
+  247  git push
+  248  clear
+  249  cd  ~
+  250  pwd
+  251  cd SDC_02-23-2019/repository/data/processed_data/
+  252  head all_countries.txt 
+  253  clear
+  254  cat header
+  255  cd ../original_data/gapminder_data/gapminder_by_country/
+  256  cat header.txt 
+  257  cat header.txt  *.cc.txt | head -3
+  258  cat header.txt  *.cc.txt > ../../../processed_data/all_countries.txt 
+  259  cd ../rep
+  260  cd ~/SDC_02-23-2019/repository/
+  261  mkdir scripts
+  262  ls
+  263  cp -r ~/SDC_02-23-2019/2019-02-23-WorkshopResources/shell-lessons/scripts/* scripts/
+  264  ls scripts/
+  265  pwd
+  266  cd data/original_data/gapminder_data/gapminder_by_country/
+  267  wc -l *.txt
+  268  wc Zimbabwe.cc.txt 
+  269  wc -l Zimbabwe.cc.txt 
+  270  wc -l *.txt
+  271  wc -l ../../../processed_data/all_countries.txt 
+  272  cat Z*.cc
+  273  cat Z*.cc.txt
+  274  clear
+  275  cat [YZ]*,txt
+  276  cat [YZ]*.txt
+  277  clear
+  278  cat [W-Z]*.txt
+  279  clear
+  280  cat header.txt
+  281  cut -f 2 Zimbabwe.cc.txt 
+  282  cut -f 5 Zimbabwe.cc.txt 
+  283  clear
+  284  cut -f 5 Zimbabwe.cc.txt | sort -n
+  285  cut -f 5 Zimbabwe.cc.txt | sort -n |head -2
+  286  ls
+  287  wc
+  288  ls | wc
+  289  clear
+  290  grep  "2007" [W-Z]*.txt
+  291  grep  "2007" [L-P]*.txt
+  292  grep  "\b2007\b" [L-P]*.txt
+  293  grep  "\b2007\b" [L-P]*.txt | wc -l
+  294  clear
+  295  cd~
+  296  cd ~
+  297  ls
+  298  clear
+  299  cd SDC_02-23-2019/repository/scripts/
+  300  cd ../data/original_data/gapminder_data/gapminder_by_country/
+  301  for gapminderfile in [W-Z]*.txt; do echo $gapminderfile; done
+  302  for gapminderfile in [W-Z]*.txt; do  ls -l $gapminderfile; done
+  303  clear
+  304  cat ../../../../scripts/loop_cut.sh
+  305  bash ../../../../scripts/loop_cut.sh
+  306  nano ../../../../scripts/loop_cut.sh
+  307  nano ../../../../scripts/loop_cut_low.sh
+  308  bash ../../../../scripts/loop_cut_low.sh
+  309  bash ../../../../scripts/loop_cut_arg.sh 3
+  310  bash ../../../../scripts/loop_cut_arg.sh 2
+  311  clear
+  312  nano ../../../../scripts/loop_conditional1.sh
+  313  clear
+  314  cat ../../../../scripts/loop_files_arg.sh
+  315  cat ../../../../scripts/loop_files_args.sh
+  316  bash ../../../../scripts/loop_files_args.sh A*.txt
+  317  clear
+  318  cat ../../../../scripts/loop_conditional1_commented.sh 
+  319  cp ../../../../scripts/loop_conditional1_commented.sh ../../../../scripts/loop_shell_exercise.sh
+  320  cat ../../../../scripts/loop_shell_exercise.sh 
+  321  nano ../../../../scripts/loop_shell_exercise.sh 
+  322  clear
+  323  ls Z*.txt> Zfiles
+  324  l
+  325  sls
+  326  ls
+  327  Zfiles
+  328  ls Z*.txt> Zfiles.out
+  329  ls
+  330  echo Zfiles.out
+  331  cat Zfiles.out
+  332  cat Zimbabwe.cc.txt 
+  333  wc -l Zimbabwe.cc.txt 
+  334  clear
+  335  history
+  336  history> history.out
